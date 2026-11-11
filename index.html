@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Majavha | Personal Website</title>
+
+    <style>
+       
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Javhaa ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #fff5fa;
+    color: #79566f;
+    overflow-x: hidden;
+}
+
+/* Background decoration */
+body::before {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    background: #ffc6e4;
+    filter: blur(120px);
+    top: -100px;
+    left: -100px;
+    opacity: .7;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 350px;
+    height: 350px;
+    background: #d9c6ff;
+    filter: blur(120px);
+    bottom: -100px;
+    right: -100px;
+    opacity: .7;
+    z-index: -1;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 9%;
+    background: #ffffffa8;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #f7d8e9;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 27px;
+    color: #e58ab9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a7799b;
+    font-weight: 700;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #e58ab9;
+}
+
+/* Hero */
+.hero {
+    min-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.tag {
+    background: white;
+    color: #e58ab9;
+    padding: 10px 23px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 5px 20px #e9b5d533;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(50px, 8vw, 85px);
+    color: #e58ab9;
+    text-shadow: 3px 5px 0 #f9d7e9;
+}
+
+.gradient {
+    color: #b69be8;
+}
+
+.description {
+    max-width: 500px;
+    color: #a88da3;
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 25px 0 30px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 15px 28px;
+    border-radius: 50px;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.primary {
+    background: linear-gradient(90deg, #f4a9cf, #c5a8f3);
+    color: white;
+    box-shadow: 0 6px 18px #e8b3d655;
+}
+
+.secondary {
+    background: white;
+    color: #c18eb5;
+    border: 1px solid #f4d5e8;
+}
+
+button:hover {
+    transform: translateY(-5px) scale(1.04);
+}
+
+/* About section */
+.section {
+    padding: 60px 9%;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 38px;
+    color: #e58ab9;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: #ffffffc9;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 35px 25px;
+    box-shadow: 0 10px 30px #e9b5d522;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) rotate(-1deg);
+    box-shadow: 0 15px 35px #e9b5d566;
+}
+
+.card h2 {
+    color: #d98ebc;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #a88da3;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Cute decorations */
+.decoration {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    color: #c18eb5;
+    font-size: 13px;
+    border-top: 1px solid #f7d8e9;
+    background: #ffffff80;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.tag {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    nav {
+        padding: 20px 5%;
+    }
+
+    nav a {
+        margin-left: 12px;
+        font-size: 13px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        min-height: 65vh;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 9px;
+    }
+
+    .hero {
+        min-height: 70vh;
+        padding: 40px 18px;
+    }
+
+    h1 {
+        font-size: 49px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 260px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .section {
+        padding: 40px 18px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    nav a {
+        font-size: 11px;
+        margin: 0 6px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Javhaa ♡</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="tag">♡ WELCOME TO MY LITTLE WORLD ♡</div>
+
+    <h1>Hello, <span class="gradient">Javhaa!</span></h1>
+
+    <p class="description">
+        A little corner of the internet made with love.
+        Stay cute, stay happy and enjoy your day! 🌷
+    </p>
+
+    <div class="buttons">
+        <button class="primary"
+        onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            Explore my world ♡
+        </button>
+
+        <button class="secondary"
+        onclick="window.open('https://facebook.com','_blank')">
+            My Facebook ✿
+        </button>
+    </div>
+
+</section>
+
+<section class="section" id="about">
+
+    <h2 class="section-title">A little about me ♡</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="decoration">🎀</div>
+            <h2>My Profile</h2>
+            <p>Hi! My name is Javhaa. Welcome to my little website!</p>
+        </div>
+
+        <div class="card">
+            <div class="decoration">🌸</div>
+            <h2>My Interests</h2>
+            <p>Technology, creativity, design and discovering new things.</p>
+        </div>
+
+        <div class="card">
+            <div class="decoration">🧸</div>
+            <h2>My Projects</h2>
+            <p>My first little website. More cute projects coming soon!</p>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    Made with ♡ by Javhaa
+    <br><br>
+    © 2026 All rights reserved.
+</footer>
+
+</body>
+</html>
+
+
+</style>
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">JAVHAA.</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="tag">✦ WELCOME TO MY WEBSITE ✦</div>
+
+    <h1>
+        I'M <span class="gradient">JAVHAA.</span>
+    </h1>
+
+    <p class="description">
+        Welcome to my personal website.
+        A place where creativity, technology
+        and ideas come together.
+    </p>
+
+    <div class="buttons">
+        <button class="primary"
+        onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            Explore More →
+        </button>
+
+        <button class="secondary"
+        onclick="window.open('https://facebook.com','_blank')">
+            Facebook ↗
+        </button>
+    </div>
+
+</section>
+
+<section class="section" id="about">
+
+    <h2 class="section-title">
+        About <span class="gradient">Me.</span>
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>01 / Profile</h2>
+            <p>My name is Javhaa. Welcome to my digital space.</p>
+        </div>
+
+        <div class="card">
+            <h2>02 / Interests</h2>
+            <p>Technology, creativity, design and learning new things.</p>
+        </div>
+
+        <div class="card">
+            <h2>03 / Projects</h2>
+            <p>This is my first personal website. More projects coming soon.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer id="contact">
+    © 2026 JAVHAA. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Skinny Javhaa</h1>
+
+        <h2>Hello World</h2>
+        <h3>Hello World</h3>
+        <h4>Hello World</h4>
+        <h5>Hello World</h5>
+
+        <pre>
+Javhaa turned 14 one year ago.
+
+Welcome to my personal website!
+        </pre>
+
+        <a href="https://facebook.com" target="_blank">
+            Javhaa's Products
+        </a>
+
+        <br>
+
+        <button onclick="alert('Welcome to Javhaa website!')">
+            Javhaa's First Button
+        </button>
+
+    </div>
+
+    <footer>
+        © 2026 Javhaa | Personal Website
+    </footer>
+
+</body>
+</html>
